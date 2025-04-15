@@ -77,18 +77,18 @@ const countries = [
         description: "东部时间 (ET)"
     },
     {
-        name: "新加坡",
-        timezone: "Asia/Singapore",
-        flag: "singapore.png",
-        utcOffset: "+08:00",
-        description: "新加坡标准时间 (SGT)"
+        name: "意大利",
+        timezone: "Europe/Rome",
+        flag: "italy.png",
+        utcOffset: "+01:00/+02:00",
+        description: "中欧时间 (CET)/中欧夏令时 (CEST)"
     },
     {
-        name: "印度",
-        timezone: "Asia/Kolkata",
-        flag: "india.png",
-        utcOffset: "+05:30",
-        description: "印度标准时间 (IST)"
+        name: "西班牙",
+        timezone: "Europe/Madrid",
+        flag: "spain.png",
+        utcOffset: "+01:00/+02:00",
+        description: "中欧时间 (CET)/中欧夏令时 (CEST)"
     },
     {
         name: "巴西",
