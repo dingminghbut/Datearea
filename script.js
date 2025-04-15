@@ -213,8 +213,23 @@ function setupSearch() {
     });
 }
 
+// 更新页脚年份
+function updateFooterYear() {
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        const currentYear = new Date().getFullYear();
+        // 确保年份不会小于2025
+        const displayYear = Math.max(currentYear, 2025);
+        currentYearElement.textContent = displayYear;
+    }
+}
+
 // 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', function() {
     initializeTimezones();
     setupSearch();
+    updateFooterYear();
+
+    // 每天检查一次年份，确保在跨年时自动更新
+    setInterval(updateFooterYear, 24 * 60 * 60 * 1000);
 });
